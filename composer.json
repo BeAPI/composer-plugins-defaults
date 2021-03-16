@@ -1,0 +1,31 @@
+{
+    "name": "beapi/composer-plugins-defaults",
+    "type": "composer-plugin",
+    "description" : "This composer plugin check for each plugin if a default config file is available and ask the user if they want to install it.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Clément Boirie",
+            "email": "cboirie@beapi.fr"
+        },
+        {
+            "name": "BeAPI",
+            "email": "technique@beapi.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "composer-plugin-api": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapi\\Composer\\PluginsDefaultsPlugin\\": "src"
+        }
+    },
+    "extra": {
+        "class": "Beapi\\Composer\\PluginsDefaultsPlugin\\PluginsDefaults"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    }
+}
